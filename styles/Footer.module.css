@@ -1,13 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap");
 
 .container {
-	text-align: center;
-	background-color: #d1411e;
-	transition: 1s;
-	font-family: "Smooch Sans", sans-serif;
-	font-size: 12px;
+  height: calc(100vh-100px);
+  background-color: #222;
+  display: flex;
+}
+.item {
+  flex: 1;
+  position: relative;
+  display: flex;
 }
 
-.container:hover {
-	background-color: salmon;
+.item:last-child {
+  flex: 2;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 18px;
+  color: #b7903c;
+}
+
+.text {
+  color: lightgray;
+}
+
+.motto {
+  color: lightgray;
 }
